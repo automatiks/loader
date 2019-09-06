@@ -403,7 +403,7 @@ $('document').ready(function() {
 		if (hrele.length > 0) {
 		var pfghot_trgc = fnc.cookieGet('pfghot_trg');
 		if (hrele.val().length > 0 && parseInt(pfghot_trgc) !== 1) {
-			var el = $('<a id="pfghot_target" class="mlfgo" href="'+hrele.val()+'" target="_blank">&nbsp;</a>');
+			var el = $('<a id="pfghot_target" class="mlfgo" href="'+hrele.val()+'" target="_blank" rel="noreferrer">&nbsp;</a>');
 			$('body').append(el);			
 			 $(document).on('contextmenu', function(e) {
 				 fnc.setCookie('pfghot_trg', 1, 1*60*1000);
